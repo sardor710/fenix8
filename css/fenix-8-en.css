@@ -1,0 +1,1107 @@
+h2, section h2 {
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 500 !important;
+  line-height: 1.3 !important; }
+
+section p {
+  font-size: 16px; }
+
+#device .text p {
+  text-transform: initial; }
+
+#hero .container .text p {
+  font-size: 1.2vw;
+  letter-spacing: 1px; }
+
+#overview .container p {
+  font-size: 28px; }
+
+#overview .container .main p svg {
+  width: 30px;
+  height: 30px;
+  margin-left: 15px; }
+
+#overview .container .three .item:nth-child(1) img {
+  width: 80%;
+  margin-top: 0px; }
+
+#overview .container .four-items .one p {
+  width: 220px; }
+
+#overview .container .three .one-big img {
+  margin-bottom: 20px; }
+
+#overview .container .three .one-big svg {
+  width: 32px;
+  height: 32px;
+  margin-left: 10px; }
+
+#overview .container .three .one-big p {
+  font-size: 21px;
+  width: 100%;
+  padding: 0 60px 0px 60px; }
+
+#overview .container .three .one-small svg {
+  width: 42px;
+  height: 42px;
+  margin-left: 10px; }
+
+#overview .container .three .one-small p {
+  font-size: 14px;
+  margin-top: 20px;
+  padding: 0 10px 15px 10px; }
+
+#overview .container .three .one-small img {
+  width: 80%;
+  margin-top: 0; }
+
+#overview .container .three .item:nth-child(2) img {
+  width: 60%; }
+
+#overview .container .three .item:nth-child(3) p {
+  margin-bottom: 30px; }
+
+#overview .container .three .item:nth-child(3) svg {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px; }
+
+#design .content-01 h3, #design .content-02 h3 {
+  font-size: 21px;
+  font-weight: 500 !important; }
+
+#design .content-01 .alltext-01 .line {
+  height: 26vh; }
+
+#design .content-02 h3 {
+  font-size: 21px;
+  font-weight: 500 !important;
+  width: 40%; }
+
+#design .title p {
+  font-size: 18px; }
+
+#voice .container .text h3 {
+  font-size: 32px;
+  font-weight: 400 !important; }
+
+#voice #panel1 .text {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 30; }
+
+#training .container h2, #outdoor .container h2 {
+  font-size: 56px; }
+
+#training .container p, #outdoor .container p {
+  font-size: 18px; }
+
+#training {
+  max-height: 1750px;
+  height: 160vh; }
+  #training .container {
+    padding: 10vh 0 5vh 0; }
+    #training .container h2 {
+      width: 100%;
+      margin: 0 auto;
+      line-height: 1.4 !important; }
+    #training .container p {
+      width: 100%;
+      margin: 0 auto; }
+    #training .container .content-01 {
+      top: 50px; }
+    #training .container .all-text h2 {
+      font-size: 32px;
+      width: 100%;
+      margin: 0 auto;
+      line-height: 1.4 !important; }
+    #training .container .all-text p {
+      width: 100%;
+      margin: 0 auto;
+      font-size: 16px; }
+
+#outdoor .container h2 {
+  width: 90%;
+  margin: 0 auto;
+  line-height: 1.4 !important; }
+
+#outdoor .container p {
+  width: 90%;
+  margin: 0 auto; }
+
+#outdoor .container .content-01 h2, #outdoor .container .content-02 h2 {
+  font-size: 32px;
+  margin: 0; }
+
+#outdoor .container .content-01 p, #outdoor .container .content-02 p {
+  font-size: 16px;
+  margin: 0; }
+
+#sports .container .subtitle h3 {
+  font-size: 42px;
+  font-weight: bold !important;
+  color: #ffffff;
+  font-weight: 500 !important;
+  line-height: 1.3 !important; }
+
+#sports .container-2 .all-text .all-category .category .text h3 {
+  font-size: 24px;
+  margin-bottom: 0;
+  font-weight: 500 !important; }
+
+#sports .container-2 .all-text p {
+  font-size: 16px;
+  max-width: 280px; }
+
+#sports .container .title h2 {
+  font-size: 70px; }
+
+#share .title p {
+  font-size: 21px;
+  margin-right: auto;
+  width: 70%;
+  margin-left: 182px;
+  line-height: 1.3 !important; }
+
+#share .container .text {
+  position: relative;
+  z-index: 41;
+  top: 40px;
+  left: 5px;
+  width: 350px;
+  line-height: 1.4 !important; }
+
+#message-app h3 {
+  font-size: 21px;
+  font-weight: 400 !important;
+  margin-bottom: 10px; }
+
+#message-app p {
+  width: 40%;
+  line-height: 1.4 !important; }
+
+#message-app a {
+  font-size: 14px; }
+
+#health .swiper {
+  height: 70vh;
+  max-height: 610px; }
+
+#health .container-top p {
+  line-height: 1.4 !important; }
+
+#health .card__one .text .tag {
+  font-size: 14px; }
+
+#health .card__one .text p {
+  font-size: 14px;
+  line-height: 1.6 !important; }
+
+#health .card__one .text h2 {
+  font-size: 23px; }
+
+#smartlife .container .text h2 {
+  font-size: 48px; }
+
+#smartlife .container .text .white h3 {
+  font-size: 18px;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  padding: 0 0.2em;
+  margin-bottom: 5px; }
+
+#smartlife .container .text .white img {
+  width: 100%;
+  max-width: 65px;
+  margin-bottom: 5px; }
+
+#bands .container .text {
+  width: 40%; }
+
+#bands .container .text h2 {
+  font-size: 42px; }
+
+.color-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #000000;
+  position: relative;
+  overflow: hidden; }
+
+.color-circle::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background-color: #670000;
+  -webkit-transform: skew(45deg) translateX(45%);
+  -ms-transform: skew(45deg) translateX(45%);
+  transform: skew(45deg) translateX(45%); }
+
+section#spec .battery-content ul {
+  padding-bottom: 0; }
+
+@media (max-width: 1680px) {
+  #health .card__one .text h2 {
+    font-size: 20px; }
+  #health .swiper {
+    height: 70vh;
+    max-height: 570px; } }
+
+@media (max-width: 1550px) {
+  #health .swiper {
+    height: 66vh; } }
+
+@media (max-width: 1440px) {
+  #overview .container p {
+    font-size: 24px; }
+  #overview .container .three .item:nth-child(1) img {
+    width: 65%;
+    margin-top: 0px; }
+  #overview .container .three .one-big p {
+    font-size: 21px;
+    padding: 0 40px 0px 40px; }
+  #overview .container .three .one-small p {
+    font-size: 14px;
+    margin-top: 15px; }
+  #overview .container .three .item:nth-child(2) img {
+    width: 50%; }
+  #overview .container .three .item:nth-child(3) img {
+    margin-top: -32%; }
+  #voice .container .text {
+    padding: 60px 0 30px 0; }
+  #voice #panel2 .text p {
+    width: 90%; }
+  #training {
+    max-height: 1750px;
+    height: 170vh; }
+  #outdoor {
+    background-size: cover; }
+    #outdoor .content-01 div:nth-child(1) {
+      width: 350px; }
+    #outdoor .content-01 div:nth-child(2) {
+      width: 450px; }
+  #sports .container .title h2 {
+    font-size: 60px; }
+  #sports .container-2 .all-text p {
+    font-size: 14px;
+    max-width: 280px; }
+  #sports .container-2 .all-text .all-category .category .text h3 {
+    font-size: 21px;
+    margin-bottom: 0;
+    font-weight: 500 !important; }
+  #map .container-2 .ui {
+    position: absolute;
+    width: 195px;
+    height: 195px;
+    z-index: 30; }
+  #map .container-2 .watchui {
+    position: absolute;
+    top: 115%;
+    left: 117%; }
+  #share .title p {
+    width: 70%;
+    margin-left: 127px;
+    font-size: 18px; }
+  #share .container .text p {
+    line-height: 1.4 !important; }
+  #health .swiper {
+    height: 70vh; }
+  #health .card__one .text {
+    height: auto; }
+  #health .swiper-slide, #health .all {
+    max-height: 510px; } }
+
+@media (max-width: 1368px) {
+  #device .text p {
+    max-width: 330px;
+    font-size: 15px; }
+  #overview .container .three .one-big p {
+    font-size: 14px;
+    padding: 0 20px 10px 20px; }
+  #design .content-01 .alltext-01,
+  #design .content-01 .alltext-01-2 {
+    top: 390px; }
+  #design .content-01 .alltext-01 .line {
+    height: 29vh; }
+  #design .content-01 .alltext-01-2 .line-01-2 {
+    height: 59vh; }
+  #design .content-02 h3 {
+    width: 65%; }
+  #training .container h2,
+  #outdoor .container h2 {
+    font-size: 48px; }
+  #training .container p,
+  #outdoor .container p {
+    font-size: 16px; }
+  #training .container p {
+    width: 85%;
+    margin: 0 auto; }
+  #training .container .all-text h2,
+  #outdoor .container .content-01 h2,
+  #outdoor .container .content-02 h2 {
+    font-size: 24px; }
+  #training .container .all-text p,
+  #outdoor .container .content-01 p,
+  #outdoor .container .content-02 p {
+    font-size: 14px; }
+  #outdoor {
+    width: 100%;
+    min-height: 1050px;
+    max-height: 1290px;
+    background-position: center; }
+    #outdoor .container p {
+      width: 85%;
+      margin: 0 auto; }
+    #outdoor .container .content-02 p {
+      font-size: 14px;
+      width: 90%; }
+  #sports .container .subtitle h3 {
+    font-size: 36px; }
+  #sports .container .subtitle h2 {
+    margin-top: 30px; }
+  #share .title h2 {
+    font-size: 120px; }
+  #share .title p {
+    font-size: 18px;
+    width: 80%;
+    margin-left: 131px; }
+  #share .bg {
+    width: 100%;
+    height: 110vh;
+    min-height: 400px;
+    max-height: 1260px; }
+  #health .swiper {
+    height: 80vh; }
+  #smartlife .container .text h2, #bands .container .text h2 {
+    font-size: 36px; }
+  #smartlife .container .text .white {
+    height: 170px; } }
+
+@media (max-width: 1280px) {
+  #device .text a {
+    font-size: 12px !important; }
+  #overview .container .three .one-small p {
+    font-size: 12px;
+    margin-top: 15px;
+    padding: 0 5px 5px 5px; }
+  #overview .container .three .item:nth-child(2) img {
+    width: 40%; }
+  #share .title p {
+    margin-left: 97px; }
+  #health .swiper {
+    height: 74vh; } }
+
+@media (max-width: 1024px) {
+  #hero .container .text p {
+    font-size: 23px;
+    letter-spacing: 1px; }
+  #device .container .text p {
+    max-width: 800px; }
+  #overview .container .main p {
+    margin: 0 auto;
+    width: 30%; }
+  #overview .container .three .item:nth-child(2) img {
+    width: 60%; }
+  #overview .container .four-items .one img {
+    margin-left: 40px; }
+  #overview .container .three .one-big svg,
+  #overview .container .three .one-small svg {
+    width: 24px;
+    height: 24px; }
+  #overview .container .three .one-big p {
+    font-size: 14px;
+    padding: 20px 30px 10px 30px; }
+  #overview #overview .container .three .one-small svg {
+    width: 28px;
+    height: 28px; }
+  #design .content-01 .alltext-01, #design .content-01 .alltext-01-2 {
+    top: 730px; }
+  #design .content-01 h3, #design .content-02 h3 {
+    font-size: 28px; }
+  #design .content-01 .alltext-01 .text-01 p {
+    width: 70%; }
+  #design .content-01 .alltext-01 .line {
+    height: 20vh; }
+  #design .content-01 .alltext-01-2 .line-01-2 {
+    height: 39vh; }
+  #design .content-02 .alltext-03 .text-03 {
+    margin-left: 15px;
+    width: 140%; }
+  #design .content-02 .alltext-03 {
+    top: 510px;
+    right: -10px; }
+  #training .container h2, #training #outdoor .container h2 {
+    font-size: 42px; }
+  #sports .container .title h2 {
+    font-size: 42px; }
+  #share {
+    height: 77vh;
+    max-height: 1160px; }
+    #share .title p {
+      margin-left: 67px; }
+  #health .card__one .text h2 {
+    font-size: 18px; }
+  #health .card__one .text .tag {
+    font-size: 13px; }
+  #health .card__one .text p {
+    font-size: 13px; }
+  #overview .container .three .item:nth-child(3) svg {
+    width: 16px;
+    height: 16px;
+    margin-left: 10px; }
+  #training {
+    max-height: 1750px;
+    height: 100vh; }
+    #training .all-text {
+      width: 100%;
+      margin: 0 auto; }
+  #outdoor .content-01 div:nth-child(2) {
+    width: 100%; }
+  #outdoor .container .content-02 p {
+    font-size: 14px;
+    width: 100%; }
+  #flashlight .container .text p {
+    font-size: 14px;
+    width: 100%; }
+  #share .title h2 {
+    font-size: 100px; }
+  #share .bg {
+    width: 100%;
+    height: 65vh;
+    min-height: 400px;
+    max-height: 1260px; }
+  #health .swiper {
+    height: 45vh;
+    min-height: 400px;
+    max-height: 600px; }
+  #overview .container p svg {
+    display: none; }
+  #training .bg-app {
+    left: 0; }
+  #map .container-2 .watchui {
+    top: 115%;
+    left: 117%; }
+  #map .container-2 .ui {
+    width: 170px;
+    height: 170px; } }
+
+@media (max-width: 820px) {
+  #hero .container .text p {
+    font-size: 20px;
+    letter-spacing: 1px; }
+  #overview .container .main p {
+    left: 30px; }
+  #overview .container .four-items .one p {
+    left: 30px; }
+  #design .content-01 .alltext-01 {
+    right: 30px; }
+  #design .content-01 .alltext-01,
+  #design .content-01 .alltext-01-2 {
+    top: 710px; }
+  #design .content-01 .alltext-01 .text-01 p {
+    width: 90%; }
+  #design .content-02 .alltext-03 {
+    top: 320px;
+    right: -10px; }
+  #design .content-01 h3, #design .content-02 h3 {
+    font-size: 24px; }
+  #design .content-02 .alltext-03 {
+    width: 42%; }
+  #training .all-text div {
+    margin: 0px 40px; }
+  #training .container h2, #outdoor .container h2 {
+    font-size: 32px; }
+  #training .container .all-text p,
+  #outdoor .container .content-01 p,
+  #outdoor .container .content-02 p {
+    font-size: 14px;
+    line-height: 1.6 !important; }
+  #outdoor .content-01 div:nth-child(1) {
+    width: 100%; }
+  #sports .container-2 .all-text .all-category {
+    width: 60%; }
+  #map {
+    height: 128vh; }
+  #share {
+    height: 88vh;
+    max-height: 1220px; }
+    #share .title h2 {
+      font-size: 80px; }
+    #share .title p {
+      margin-left: 47px;
+      font-size: 16px;
+      width: 90%; }
+    #share .bg {
+      height: 75vh; }
+  #message-app h2 {
+    margin-bottom: 0;
+    font-size: 28px; }
+  #message-app .icon {
+    width: 80px; }
+  #health .swiper {
+    min-height: 400px;
+    max-height: 510px; }
+  #health .card__one .text p {
+    font-size: 12px;
+    line-height: 1.4 !important; }
+  #smartlife .container .text h2, #bands .container .text h2 {
+    font-size: 28px; }
+  section#spec ul {
+    margin-left: 50px; } }
+
+@media (max-width: 768px) {
+  #hero .container .text p {
+    font-size: 19px; }
+  #design .content-01 .alltext-01, #design .content-01 .alltext-01-2 {
+    top: 600px; }
+  #design .content-02 .alltext-03 {
+    width: 42%;
+    top: 270px;
+    right: 10px; }
+  #voice .container .text h2 {
+    font-size: 48px; }
+  #training .container .all-text h2, #outdoor .container .content-01 h2, #outdoor .container .content-02 h2 {
+    font-size: 21px; }
+  #outdoor .content-01 {
+    top: 120px; }
+  #map h2 {
+    font-size: 36px; }
+  #share .title p {
+    margin-left: 35px; }
+  #share .container .text {
+    top: 10px;
+    left: 5px;
+    width: 480px; }
+  #health .card__one .text .tag {
+    font-size: 12px; }
+  #health .card__one .text h2 {
+    font-size: 16px; }
+  #health .swiper-slide, #health .all {
+    min-height: 450px;
+    max-height: 500px; }
+  #health .swiper {
+    height: 50vh;
+    min-height: 400px;
+    max-height: 650px; } }
+
+@media (max-width: 599px) {
+  #hero .container .text p {
+    font-size: 13px;
+    padding: 0;
+    width: 90%;
+    left: 0;
+    right: 0;
+    letter-spacing: 0;
+    margin: 0 auto; }
+  #device .text .compare ol {
+    padding-bottom: 5px; }
+  #device .container .text p, #device .text .compare ol li {
+    font-size: 13px; }
+  #overview .container .main p,
+  #overview .container .three .one-big p,
+  #overview .container .three .one-small p,
+  #overview .container .four-items .one p {
+    font-size: 14px; }
+  #overview .container .three .one-big p {
+    width: 94px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    left: 30px;
+    margin-top: 0;
+    margin: 0;
+    text-align: left;
+    padding: 0;
+    margin-left: 0;
+    line-height: 1.4 !important; }
+  #overview .container .three .item:nth-child(1) img {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    max-width: 145px;
+    margin-top: 0;
+    margin-left: 140px;
+    margin-right: 0;
+    margin-bottom: 0;
+    position: absolute; }
+  #overview .container .three .item:nth-child(3) img {
+    margin-top: -32%;
+    width: 70%;
+    margin-left: 0;
+    margin-top: -10px;
+    position: absolute;
+    right: -20px; }
+  #overview .container .three .one-small p {
+    font-size: 14px;
+    margin-top: 0;
+    padding: 0 5px 5px 5px; }
+  #overview .container .three .item:nth-child(3) p {
+    margin-bottom: 0; }
+  #overview .container h2 {
+    font-size: 18px; }
+  #overview .container .four-items .one p {
+    width: 100px; }
+  #design .title p {
+    width: 90%;
+    font-size: 16px; }
+  #design .content-01 .alltext-01, #design .content-01 .alltext-01-2 {
+    top: 390px; }
+  #design .content-01 h3, #design .content-02 h3 {
+    font-size: 21px; }
+  #design .content-01 .alltext-01 {
+    right: 0; }
+  #design .content-01 .alltext-01 .line {
+    height: 33vh; }
+  #design .content-02 .alltext-03 {
+    width: 92%;
+    top: 270px;
+    right: 10px; }
+  #design .content-02 .alltext-03 .line-03 {
+    display: none; }
+  #design .bg {
+    top: -155px;
+    height: 250vw;
+    width: 120%;
+    left: 0; }
+  #voice .container .text h2 {
+    font-size: 36px; }
+  #voice .container .text h3 {
+    font-size: 16px; }
+  #voice #panel1 .text {
+    position: relative;
+    top: -120px;
+    left: 0;
+    bottom: 0;
+    z-index: 30; }
+  #training .container p, #outdoor .container p {
+    font-size: 14px; }
+  #training {
+    max-height: 1270px;
+    height: 300vw;
+    background-position: bottom center; }
+    #training .bg-app {
+      bottom: 360px; }
+    #training .all-text div:nth-child(2) {
+      margin: 30px 40px 0px 40px; }
+    #training .all-text {
+      padding: 50px 0 30px 0; }
+    #training .container h2 {
+      font-size: 25px;
+      width: 90%;
+      margin: 0 auto 15px auto; }
+  #outdoor .container .title {
+    margin-top: 0; }
+  #outdoor .container h2 {
+    font-size: 28px;
+    width: 90%;
+    margin: 0 auto 15px auto; }
+  #outdoor .container p {
+    width: 95%;
+    margin: 0 auto; }
+  #outdoor .content-01 {
+    top: 0px;
+    width: 80%;
+    margin: 0 auto; }
+    #outdoor .content-01 div, #outdoor .content-01 div:nth-child(2) {
+      width: 100%; }
+    #outdoor .content-01 p {
+      width: 100%; }
+  #outdoor .content-01 div,
+  #outdoor .content-02 div {
+    width: 90%;
+    margin: 0 auto 5px auto; }
+  #flashlight {
+    max-height: 700px;
+    min-height: 480px;
+    height: 160vw; }
+    #flashlight .container .text {
+      top: 40px; }
+    #flashlight img {
+      top: 38%; }
+  #sports .container .title h2 {
+    font-size: 34px;
+    width: 80%; }
+  #sports .container .subtitle h3 {
+    font-size: 28px; }
+  #sports .container-2 .all-text p {
+    font-size: 11px;
+    max-width: 100%; }
+  #sports .container-2 .all-text .all-category .category .text h3 {
+    font-size: 16px;
+    margin-bottom: 0;
+    font-weight: 500 !important; }
+  #sports .container-2 .all-text h3 {
+    font-size: 18px; }
+  #sports .container .title h2 {
+    font-size: 32px;
+    width: 80%; }
+  #map {
+    height: 370vw; }
+    #map h2 {
+      font-size: 28px;
+      width: 90%; }
+    #map .container {
+      width: 80% !important; }
+    #map .container-2 .ui {
+      position: absolute;
+      width: 150px;
+      height: 150px; }
+    #map .container-2 .watchui {
+      position: absolute;
+      top: 115%;
+      left: 117%; }
+    #map .container .dynamic-round-trip {
+      height: 68vh;
+      min-height: 350px;
+      max-height: 710px; }
+  #share {
+    height: 240vw;
+    min-height: 550px;
+    max-height: 930px; }
+    #share .title h2 {
+      font-size: 50px; }
+    #share .title p {
+      font-size: 16px;
+      margin-left: 0;
+      margin-right: 0;
+      text-align: center;
+      width: 90%;
+      line-height: 1.4 !important; }
+    #share .bg {
+      height: 200vw;
+      top: 33vw; }
+    #share .container .text {
+      top: 10px;
+      width: 90%; }
+  #message-app p {
+    width: 100%;
+    line-height: 1.4 !important; }
+  #message-app h3 {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  #health .swiper {
+    height: 67vh;
+    min-height: 400px;
+    max-height: 600px; }
+  #health .card__one .text h2 {
+    margin: 0;
+    font-size: 18px;
+    margin-bottom: 10px; }
+  #health .card__one .text .tag {
+    font-size: 12px; }
+  #health .container {
+    width: 100% !important;
+    margin-top: -20%; }
+  #health .card__one img {
+    max-width: 270px; }
+  #smartlife .container .text h2, #bands .container .text h2 {
+    font-size: 24px; }
+  #smartlife .container .text .white h3 {
+    font-size: 15px; }
+  #bands .container .text {
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 320px;
+    z-index: 20; }
+  section#spec ul {
+    margin-left: 0; }
+  section#spec .size {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    height: 30px; }
+  section#spec table.p-sticky {
+    top: -30px !important; }
+  section#spec table tbody td.row-label {
+    width: 50px; }
+  section#spec dl.color-con dd {
+    width: 18px;
+    height: 18px; }
+  section#spec .remark {
+    padding: 0; } }
+
+@media (max-width: 400px) {
+  #hero .video:after {
+    max-height: 200px;
+    bottom: -30px; }
+  #design .bg {
+    top: -175px; }
+  #map {
+    height: 400vw; }
+  #message-app a {
+    max-width: 180px; }
+  #health a {
+    max-width: 240px; } }
+
+@media (max-width: 390px) {
+  #design .bg {
+    top: -335px;
+    height: 315vw;
+    width: 140%;
+    left: -15%; }
+  #voice #panel1 .text {
+    top: -140px; }
+  #outdoor .container {
+    padding: 36px 10px; }
+  #outdoor .content-01 {
+    top: 30px; }
+  #sports .container-2 .all-text .title {
+    width: 70%; }
+  #flashlight {
+    height: 180vw; }
+    #flashlight .container .text {
+      top: 0px; }
+  #map {
+    height: 410vw; }
+  #share .bg {
+    height: 220vw;
+    top: 35vw; }
+  #health .card__one img {
+    max-width: 300px; }
+  #health .swiper-slide {
+    height: 500px !important;
+    width: 100% !important; }
+  #smartlife .container .text .white h3 {
+    font-size: 16px; }
+  section#spec table.p-sticky {
+    top: -35px !important; } }
+
+@media (max-width: 375px) {
+  #hero .container .text p {
+    font-size: 12px; }
+  #outdoor {
+    width: 100%;
+    min-height: auto;
+    max-height: 1500px; }
+  #design .bg {
+    background-size: cover; }
+  #training .all-text {
+    padding: 0 0 30px 0; }
+  #training .bg-app {
+    bottom: 300px; }
+  #share .title h2 {
+    font-size: 45px; } }
+
+@media (max-width: 360px) {
+  #hero .container .text p {
+    font-size: 12px; }
+  #hero .container .text h2 {
+    top: 510px; }
+  #device .container .text h2 {
+    font-size: 28px; }
+  #device .container .text p, #device .text .compare ol li {
+    font-size: 12px; }
+  #device .text .compare ol li span {
+    font-size: 24px; }
+  #overview .container h2 {
+    font-size: 16px; }
+  #overview .container .main p {
+    left: 15px; }
+  #design .bg {
+    top: -255px;
+    height: 275vw;
+    width: 120%;
+    left: -5%; }
+  #design .title p {
+    width: 90%;
+    font-size: 14px; }
+  #design .content-01 .alltext-01, #design .content-01 .alltext-01-2 {
+    top: 380px; }
+  #design .content-01 h3, #design .content-02 h3 {
+    font-size: 18px; }
+  #design .content-02 .alltext-02 .line-02 {
+    display: none; }
+  #design .content-02 .alltext-03 {
+    width: 92%;
+    top: 220px;
+    right: 10px; }
+  #design .content-02 .alltext-02 {
+    right: 70px;
+    bottom: 10px; }
+  #panel2::after {
+    height: 61vh; }
+  #training {
+    max-height: 1300px;
+    height: 400vw;
+    background-position: bottom center; }
+    #training .bg-app {
+      bottom: 350px; }
+  #outdoor .content-01 {
+    top: 0; }
+  #sports .container-2 .all-text .all-category {
+    width: 80%; }
+  #map {
+    height: 360vw; }
+    #map h2 {
+      font-size: 24px;
+      width: 90%; }
+  #map .container .dynamic-round-trip {
+    height: 63vh; }
+  #map .container-2 .ui {
+    width: 111px;
+    height: 111px; }
+  #map .container img, #map .container-2 img {
+    width: 260px; }
+  #share .title h2 {
+    font-size: 40px; }
+  #share .title p {
+    font-size: 15px; }
+  #share .container .text h2 {
+    font-size: 24px; }
+  #share .container .text p {
+    margin-bottom: 0; }
+  #health .card__one img {
+    max-width: 240px; }
+  #health .swiper {
+    height: 80vh;
+    min-height: 320px;
+    max-height: 480px; }
+  #health .swiper-slide, #health #health .all {
+    min-height: 400px;
+    max-height: 450px; }
+  #smartlife .container .text .white img {
+    max-width: 45px;
+    margin-bottom: 5px; }
+  #smartlife .container .text .white p {
+    padding: 0 2px; } }
+
+@media (max-width: 320px) {
+  section p:not(td) {
+    font-size: 12px; }
+  .text:not(td) h2 {
+    font-size: 22px;
+    line-height: 1.2 !important; }
+  #hero .container .text h2 {
+    top: 430px; }
+  #hero .container .text p {
+    font-size: 10px;
+    width: 90%; }
+  #device .container .text p, #device .text .compare ol li {
+    font-size: 12px;
+    line-height: 1.4 !important; }
+  #device .container .text h2 {
+    font-size: 24px; }
+  #overview .container .main p,
+  #overview .container .four-items .one p,
+  #overview .container .three .one-big p,
+  #overview .container .three .one-small p {
+    font-size: 14px; }
+  #overview .container h2 {
+    font-size: 14px; }
+  #overview .container .three .item:nth-child(1) img {
+    max-width: 115px;
+    margin-left: 120px; }
+  #design .title h2 {
+    font-size: 28px; }
+  #design .content-02 .alltext-03 {
+    width: 92%;
+    top: 150px;
+    right: 10px; }
+  #design .bg {
+    top: -205px;
+    height: 275vw;
+    width: 130%;
+    left: -15%; }
+  #design .content-02 .alltext-03 p {
+    width: 70%; }
+  #design .content-01 p, #design .content-02 p, #design .content-02 .alltext-02 .text-02 p {
+    line-height: 1.4 !important; }
+  #voice #panel1 .text img, #voice #panel2 .text img {
+    width: 30px; }
+  #voice #panel3 .text img {
+    width: 50px; }
+  #voice .container .text h2 {
+    font-size: 28px; }
+  #voice .container .text h3 {
+    font-size: 13px; }
+  #training {
+    max-height: 1200px; }
+  #training .container h2, #outdoor .container h2 {
+    font-size: 24px; }
+  #training .container p, #outdoor .container p {
+    font-size: 13px; }
+  #training .container .all-text h2,
+  #outdoor .container .content-01 h2,
+  #outdoor .container .content-02 h2,
+  #flashlight .container .text h2 {
+    font-size: 18px; }
+  #training .container .all-text p,
+  #outdoor .container .content-01 p,
+  #outdoor .container .content-02 p,
+  #flashlight .container .text p {
+    font-size: 12px;
+    line-height: 1.6 !important; }
+  #outdoor .content-01 {
+    top: 20px; }
+  #outdoor .content-02 div img {
+    width: 210px;
+    margin-left: 10%; }
+  #flashlight .container .text {
+    top: 0px; }
+  #flashlight img {
+    width: 250px;
+    left: 9%; }
+  #sports .container .subtitle h3 {
+    font-size: 21px; }
+  #map {
+    height: 390vw; }
+    #map .container .dynamic-round-trip .text {
+      top: 70px; }
+  #share {
+    height: 270vw; }
+    #share .container {
+      margin-top: 0; }
+    #share .container .text p {
+      margin-bottom: 0;
+      width: 100%; }
+    #share .title p {
+      font-size: 14px;
+      width: 95%; }
+    #share .bg {
+      height: 240vw;
+      top: 30vw; }
+  #health .container-top h2 {
+    font-size: 25px;
+    margin-top: 40px; }
+  #health .container-top p {
+    font-size: 14px;
+    width: 100%;
+    line-height: 1.4 !important; }
+  #health .card__one .text h2 {
+    margin: 0;
+    font-size: 15px;
+    margin-bottom: 5px; }
+  #health .swiper-slide {
+    height: 470px !important;
+    width: 100% !important; }
+  #health .swiper {
+    height: 88vh; }
+  #message-app {
+    height: 100vw;
+    min-height: 400px;
+    max-height: 700px; }
+    #message-app p {
+      margin-top: 10px; }
+    #message-app a {
+      font-size: 12px !important; }
+  #health .card__one img {
+    max-width: 230px; }
+  #smartlife .container .text h2, #bands .container .text h2 {
+    font-size: 21px; }
+  #smartlife .container .text .white h3 {
+    font-size: 14px; }
+  section#spec .name {
+    font-size: 12px !important; } }

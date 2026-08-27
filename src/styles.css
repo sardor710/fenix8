@@ -1,0 +1,268 @@
+/* ==========================================================================
+   Garmin fēnix 8 - Enhanced Modular Stylesheet
+   ========================================================================== */
+
+:root {
+  --garmin-black: #000000;
+  --garmin-dark-gray: #111111;
+  --garmin-gray-2: #1e1e1e;
+  --garmin-gray-3: #2c2c2c;
+  --garmin-light-gray: #888888;
+  --garmin-white: #ffffff;
+  --garmin-orange: #ff8c06;
+  --garmin-gold: #e6deb9;
+  --font-family-base: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--garmin-black);
+  color: var(--garmin-white);
+  font-family: var(--font-family-base);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--garmin-black);
+  color: var(--garmin-white);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* APAC Global Header */
+.garmin-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.garmin-header .header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.garmin-logo svg {
+  height: 20px;
+  width: auto;
+  fill: var(--garmin-white);
+}
+
+.header-nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.header-nav-links .nav-item {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.header-nav-links .nav-item:hover {
+  color: var(--garmin-orange);
+}
+
+/* Product Navigation Header */
+#pd-nav {
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  transition: all 0.3s ease;
+}
+
+#pd-nav.fixed {
+  background: rgba(17, 17, 17, 0.95);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Spec Product Color Selector and Images */
+#spec .products-image {
+  display: none;
+  transition: opacity 0.3s ease;
+}
+
+#spec .products-image.active {
+  display: block;
+}
+
+.color-con dd {
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.color-con dd:hover,
+.color-con dd.active {
+  transform: scale(1.25);
+  box-shadow: 0 0 10px rgba(255, 140, 6, 0.6);
+}
+
+.size-con p {
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.2s ease, font-weight 0.2s ease;
+}
+
+.size-con p.active {
+  color: var(--garmin-orange);
+  font-weight: 700;
+}
+
+/* Battery Accordion Panels - Vertical Order */
+section#spec table tbody tr td.text {
+  vertical-align: top !important;
+}
+
+section#spec .battery-title {
+  cursor: pointer !important;
+  user-select: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  width: 100% !important;
+  max-width: 220px !important;
+  margin: 8px auto 0 auto !important;
+  padding: 10px 16px !important;
+  border-radius: 6px !important;
+  background-color: #333333 !important;
+  color: #ffffff !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  box-sizing: border-box !important;
+  transition: background-color 0.2s ease, border-radius 0.2s ease !important;
+}
+
+section#spec .battery-title:hover {
+  background-color: #444444 !important;
+}
+
+section#spec .battery-title.is-open {
+  background-color: #484848 !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+section#spec .battery-title svg {
+  width: 12px !important;
+  height: 12px !important;
+  fill: #ffffff !important;
+  transition: transform 0.25s ease !important;
+  display: inline-block !important;
+}
+
+section#spec .battery-title.is-open svg {
+  transform: rotate(180deg) !important;
+}
+
+section#spec .battery-content {
+  display: none;
+  width: 100% !important;
+  max-width: 220px !important;
+  margin: 0 auto 10px auto !important;
+  padding: 12px 16px !important;
+  background-color: #1a1a1a !important;
+  border: 1px solid #383838 !important;
+  border-top: none !important;
+  border-bottom-left-radius: 6px !important;
+  border-bottom-right-radius: 6px !important;
+  border-left: 3px solid var(--garmin-orange) !important;
+  text-align: left !important;
+  box-sizing: border-box !important;
+}
+
+section#spec .battery-content ul {
+  list-style: disc !important;
+  padding-left: 18px !important;
+  margin: 0 !important;
+}
+
+section#spec .battery-content ul li {
+  font-size: 13px !important;
+  line-height: 1.6 !important;
+  color: #cccccc !important;
+  margin-bottom: 4px !important;
+}
+
+section#spec .battery-content ul li:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Global Footer */
+.garmin-footer {
+  background: var(--garmin-dark-gray);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px 0;
+  margin-top: 60px;
+  font-size: 13px;
+  color: #777;
+}
+
+.garmin-footer .footer-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #888;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--garmin-white);
+}
+
+/* Video smooth controls */
+video {
+  outline: none;
+  border: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header-nav-links {
+    display: none;
+  }
+  
+  .footer-brand {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

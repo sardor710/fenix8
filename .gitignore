@@ -1,0 +1,6 @@
+.vibeskills/
+outputs/
+fetched/
+node_modules/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,230 @@
+const fs = require("fs");
+const path = require("path");
+
+const htmlTemplate = `<!DOCTYPE html>
+<html lang="en-SG" data-locale="en-SG">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fēnix 8 Series the ultimate smartwatch | Garmin Singapore</title>
+    <meta name="description" content="fēnix 8 series - the ultimate smartwatch - the top choice for mountain climbing, trail running, skiing and other outdoor adventures. With either AMOLED or solar displays, torchlight, spectacular battery life, speaker and microphones and an enhanced performance and training features for more training data and insights. The best companion to be limitless!">
+    <link rel="shortcut icon" href="vendor/favicon.ico">
+    <meta property="og:url" content="https://www.garmin.com.sg/minisite/fenix/fenix-8/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="fēnix 8 Series the ultimate smartwatch | Garmin Singapore">
+    <meta property="og:description" content="fēnix 8 series - the ultimate smartwatch - the top choice for mountain climbing, trail running, skiing and other outdoor adventures. With either AMOLED or solar displays, torchlight, spectacular battery life, speaker and microphones and an enhanced performance and training features for more training data and insights. The best companion to be limitless!">
+    <meta property="og:image" content="images/fb-fenix8.jpg">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/asia.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/minisite.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fenix-8.css">
+    <link rel="stylesheet" href="css/fenix-8-en.css">
+    <link rel="stylesheet" href="src/styles.css">
+
+    <!-- Core Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/vue.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/ScrollMagic.min.js"></script>
+    <script src="js/animation.gsap.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/lazysizes.min.js"></script>
+</head>
+<body>
+    <!-- Top Global Header -->
+    <header id="apac-header-2017" class="garmin-header">
+        <div class="header-inner container">
+            <a href="https://www.garmin.com.sg/" class="garmin-logo" aria-label="Garmin Singapore">
+                <svg width="115" height="24" viewBox="0 0 115 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.4 0H0v24h10.4c6.6 0 11.2-4.5 11.2-12S17 0 10.4 0zm0 18.2H5.6V5.8h4.8c3.5 0 5.6 2.6 5.6 6.2s-2.1 6.2-5.6 6.2zm20.8-5.7h6.7v-4h-6.7V5.8h7.9V0H25.6v24h16.2v-5.8h-10.6v-5.7zm28.3 11.5l-6.8-12.7V24h-5.6V0h5.6l6.8 12.6V0h5.6v24h-5.6zm14.1 0h5.6V0h-5.6v24zm22 0l-7.7-14.7V24h-5.6V0h5.6l7.7 14.6V0h5.6v24h-5.6z"/>
+                </svg>
+            </a>
+            <div class="header-nav-links">
+                <a href="#hero" class="nav-item">fēnix 8</a>
+                <a href="#device" class="nav-item">AMOLED vs Solar</a>
+                <a href="#spec" class="nav-item">Specifications</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Sub-Navigation -->
+    <section id="pd-nav" class="p-sticky" v-html="text"></section>
+
+    <!-- Hero Section -->
+    <section id="hero" class="p-sticky">
+        <div class="container flex-box">
+            <div class="text">
+                <p class="">
+                    Don't accept your limits.<br>
+                    Break barriers!<br>
+                    No matter how tough the challenge or how ambitious the goals.<br>
+                    Train thoroughly, plan ahead and stay prepared with fēnix 8.<br>
+                    Push yourself to new heights, unleash the potential.<br>
+                    With fēnix 8, you are not just ready—you are limitless.<br>
+                </p>
+                <h2>Be Limitless<br></h2>
+            </div>
+            <div class="video">
+                <video playsinline autoplay muted loop style="min-width:100%; min-height:100%; z-index: 1" id="show-video">
+                    <source src="video/minisite-kv.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <div class="shadow"></div>
+        </div>
+    </section>
+
+    <!-- Device Comparison Section -->
+    <section id="device" class="p-sticky" v-html="text" class="scroll-play"></section>
+
+    <!-- Overview Section -->
+    <section id="overview" v-html="text"></section>
+
+    <!-- Design & Materials Section -->
+    <section id="design" v-html="text"></section>
+
+    <!-- Voice Control Section -->
+    <section id="voice" v-html="text"></section>
+
+    <!-- Training Section -->
+    <section id="training" v-html="text"></section>
+
+    <!-- Outdoor Section -->
+    <section id="outdoor" v-html="text"></section>
+
+    <!-- LED Flashlight Section -->
+    <section id="flashlight" v-html="text"></section>
+
+    <!-- Sports Section -->
+    <section id="sports" v-html="text"></section>
+
+    <!-- Map & Navigation Section -->
+    <section id="map" v-html="text"></section>
+
+    <!-- Garmin Share Section -->
+    <section id="share" v-html="text"></section>
+
+    <!-- Messenger App Section -->
+    <section id="message-app" v-html="text"></section>
+
+    <!-- Health Monitoring Section -->
+    <section id="health" v-html="text"></section>
+
+    <!-- Smart Life Section -->
+    <section id="smartlife" v-html="text"></section>
+
+    <!-- Bands Section -->
+    <section id="bands" v-html="text"></section>
+
+    <!-- Specs Matrix & Watch Customizer Section -->
+    <section id="spec" class="text-center">
+        <div data-nav="fenix8" class="active">
+            <div class="container">
+                <h2>Spec<br></h2>
+                <table class="p-sticky products">
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <td class="pd fenix-8-amoled">
+                                <div class="product-image-con">
+                                    <img class="products-image active" src="images/spec-fenix-8-amoled-43mm-gold.png" alt="fenix-8-amoled-43mm-gold" width="100%">
+                                    <img class="products-image" src="images/spec-fenix-8-amoled-43mm-black.png" alt="spec-fenix-8-amoled-43mm-black" width="100%">
+                                    <img class="products-image" src="images/spec-fenix-8-amoled-43mm-white.png" alt="spec-fenix-8-amoled-43mm-white" width="100%">
+                                    <img class="products-image" src="images/spec-fenix-8-amoled-47mm-orange.png" alt="fenix-8-amoled-47mm-orange" width="100%">
+                                    <img class="products-image" src="images/spec-fenix-8-amoled-47mm-black.png" alt="fenix-8-amoled-47mm-black" width="100%">
+                                    <img class="products-image" src="images/spec-fenix-8-amoled-47mm-blackred.png" alt="fenix-8-amoled-47mm-blackred" width="100%">
+                                    <img class="products-image" src="images/spec-fenix-8-amoled-51mm-orange.png" alt="fenix-8-amoled-51mm-orange" width="100%">
+                                    <img class="products-image" src="images/spec-fenix-8-amoled-51mm-black.png" alt="fenix-8-amoled-51mm-black" width="100%">
+                                </div>
+                                <div class="spec-fix">
+                                    <p class="name">FĒNIX 8 AMOLED</p>
+                                    <div class="size-con">
+                                        <p class="size active" data-size="43">43mm</p>
+                                        <p data-size="43">43mm</p>
+                                        <p data-size="43">43mm</p>
+                                        <p data-size="47">47mm</p>
+                                        <p data-size="47">47mm</p>
+                                        <p data-size="47">47mm</p>
+                                        <p data-size="51">51mm</p>
+                                        <p data-size="51">51mm</p>
+                                    </div>
+                                    <dl class="color-con align-center">
+                                        <dd data-color="#E6DEB9" data-sn="010-02903-18" class="active" title="Soft Gold / Cream"></dd>
+                                        <dd data-color="#000000" data-sn="010-02903-28" title="Slate Grey / Black"></dd>
+                                        <dd data-color="#ffffff" data-sn="010-02903-06" title="Silver / Whitestone"></dd>
+                                        <dd data-color="#FF8C06" data-sn="010-02904-19" title="Titanium / Spark Orange"></dd>
+                                        <dd data-color="#000000" data-sn="010-02904-09" title="Carbon Grey DLC / Black"></dd>
+                                        <dd data-color="#2a2a2a" data-sn="010-02904-29" class="color-circle" title="Slate Grey / Black Red"></dd>
+                                        <dd data-color="#FF8C06" data-sn="010-02905-53" title="Titanium / Spark Orange 51mm"></dd>
+                                        <dd data-color="#000000" data-sn="010-02905-63" title="Carbon Grey DLC 51mm"></dd>
+                                    </dl>
+                                    <div class="price-con align-center margin-top-m"></div>
+                                </div>
+                            </td>
+                            <td class="pd fenix-8-solar">
+                                <div class="product-image-con">
+                                    <img class="products-image active" src="images/spec-fenix-8-solar-47mm-black.png" alt="spec-fenix-8-solar-47mm-black" width="100%">
+                                    <img class="products-image" src="images/spec-fenix-8-solar-51mm-black.png" alt="spec-fenix-8-solar-51mm-black" width="100%">
+                                </div>
+                                <div class="spec-fix">
+                                    <p class="name">FĒNIX 8 Solar</p>
+                                    <div class="size-con">
+                                        <p class="size active" data-size="47">47mm</p>
+                                        <p data-size="51">51mm</p>
+                                    </div>
+                                    <dl class="color-con align-center">
+                                        <dd data-color="#000000" data-sn="010-02906-70" class="active" title="Carbon Grey DLC Titanium 47mm"></dd>
+                                        <dd data-color="#000000" data-sn="010-02907-70" title="Carbon Grey DLC Titanium 51mm"></dd>
+                                    </dl>
+                                    <div class="price-con align-center margin-top-m"></div>
+                                </div>
+                            </td>
+                        </tr>
+                    </thead>
+                </table>
+                <table class="table">
+                    <tbody class="body" v-html="tbody"></tbody>
+                </table>
+                <p class="remark">
+                    * Solar charging, assuming all-day wear with 3 hours per day outside in 50,000 lux conditions<br>
+                    ** Solar charging, assuming use in 50,000 lux conditions<br>
+                    *** Each color varies depending on the country of sale, please check the official website for more details.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="apac-footer-2017" class="garmin-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <p class="copyright">© 2026 Garmin Ltd. or its subsidiaries. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://www.garmin.com.sg/privacy/">Privacy Policy</a>
+                    <a href="https://www.garmin.com.sg/terms-of-use/">Terms of Use</a>
+                    <a href="https://www.garmin.com.sg/security/">Security</a>
+                    <a href="https://www.garmin.com.sg/compliance/">Compliance</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Vue Models & Contents Injection -->
+    <script src="js/contents.js"></script>
+    <script src="js/promotion.js"></script>
+    <script src="js/fenix-8.js"></script>
+
+    <!-- Custom Modular Systems -->
+    <script src="src/js/animations.js"></script>
+    <script src="src/js/interactions.js"></script>
+    <script src="src/main.js"></script>
+</body>
+</html>`;
+
+fs.writeFileSync("index.html", htmlTemplate, "utf8");
+console.log("Successfully wrote canonical index.html");

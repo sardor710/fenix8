@@ -1,0 +1,452 @@
+{
+  "generated_at": "2026-08-27T06:17:32.053Z",
+  "base_url": "https://www.garmin.com.sg/minisite/fenix/fenix-8/",
+  "assets": [
+    {
+      "path": "images/fb-fenix8.jpg",
+      "size": 168301,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/spec-fenix-8-amoled-43mm-gold.png",
+      "size": 73769,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/spec-fenix-8-amoled-43mm-black.png",
+      "size": 64524,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/spec-fenix-8-amoled-43mm-white.png",
+      "size": 63817,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/spec-fenix-8-amoled-47mm-orange.png",
+      "size": 86088,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/spec-fenix-8-amoled-47mm-black.png",
+      "size": 79740,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/spec-fenix-8-amoled-47mm-blackred.png",
+      "size": 69926,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/spec-fenix-8-amoled-51mm-orange.png",
+      "size": 94483,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/spec-fenix-8-amoled-51mm-black.png",
+      "size": 84259,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/spec-fenix-8-solar-47mm-black.png",
+      "size": 69207,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/spec-fenix-8-solar-51mm-black.png",
+      "size": 75093,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/fenix8-amoled-product-main.png",
+      "size": 161025,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/fenix8-solar-product-main.png",
+      "size": 125838,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/main-wording.png",
+      "size": 3267,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/overview-01.png",
+      "size": 51040,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/overview-01-m.png",
+      "size": 45886,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/overview-02.png",
+      "size": 46328,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/overview-03.png",
+      "size": 41259,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/overview-04.png",
+      "size": 4938,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/overview-04-m.png",
+      "size": 4933,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/overview-05.png",
+      "size": 12485,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/voice-icon-01.png",
+      "size": 743,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/voice-icon-02.png",
+      "size": 799,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/voice-icon-03.png",
+      "size": 857,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/training-product.png",
+      "size": 112415,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/prodoct-climbpro.png",
+      "size": 116019,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/prodoct-pacepro.png",
+      "size": 131099,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/light.png",
+      "size": 143490,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/prodoct-flashlight.png",
+      "size": 385508,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/button.png",
+      "size": 9364,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/sport-icon-01.png",
+      "size": 1295,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/sport-icon-02.png",
+      "size": 1573,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/sport-icon-03.png",
+      "size": 1186,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/sport-icon-04.png",
+      "size": 664,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/dynamic-map-product.png",
+      "size": 99889,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/map-01.png",
+      "size": 104061,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/map-02.png",
+      "size": 174120,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/map-03.png",
+      "size": 127315,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/map-04.png",
+      "size": 122330,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/product-map.png",
+      "size": 117264,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/garmin-message-app.png",
+      "size": 52896,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/product-health.png",
+      "size": 152400,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/health-bg01.jpg",
+      "size": 30315,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/health-bg01-m.png",
+      "size": 196089,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/health-bg04.jpg",
+      "size": 23910,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/health-bg04-m.png",
+      "size": 152191,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/health-bg02.jpg",
+      "size": 28359,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/health-bg02-m.png",
+      "size": 185853,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/health-bg03.jpg",
+      "size": 151175,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/health-bg03-m.png",
+      "size": 192636,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/health-bg05.jpg",
+      "size": 28337,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/health-bg05-m.png",
+      "size": 162116,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/icon-pay.png",
+      "size": 3052,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/icon-notification.png",
+      "size": 866,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/icon-jetlag.png",
+      "size": 3719,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/icon-find.png",
+      "size": 4257,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/icon-accident.png",
+      "size": 3801,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/icon-music.png",
+      "size": 2724,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/infinite-1024.png",
+      "size": 11453,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/kv-bg.jpg",
+      "size": 358984,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/overview-bg-voice.jpg",
+      "size": 14627,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/overview-bg-training.jpg",
+      "size": 31484,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/overview-bg-sports.jpg",
+      "size": 13752,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/design-bg.jpg",
+      "size": 82181,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/training-bg.jpg",
+      "size": 252452,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/training-app-bg.png",
+      "size": 73219,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/outdoor-bg.jpg",
+      "size": 489673,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/flashlight-bg.jpg",
+      "size": 166732,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/sport-bg.jpg",
+      "size": 221499,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/mapline-bg.jpg",
+      "size": 163362,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/dynamic-map-bg.jpg",
+      "size": 150344,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/share-bg.jpg",
+      "size": 298880,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/share-app-bg.jpg",
+      "size": 170841,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/smartlife-bg.jpg",
+      "size": 97335,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/bands-bg.jpg",
+      "size": 276906,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/overview-bg-voice-m.jpg",
+      "size": 39844,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/design-bg-m.jpg",
+      "size": 63658,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/overview-bg-sports-m.jpg",
+      "size": 71419,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/design-bg-m-2.jpg",
+      "size": 38948,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/training-bg-m.jpg",
+      "size": 90722,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/training-app-bg-m.png",
+      "size": 121146,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/outdoor-bg-m.jpg",
+      "size": 125770,
+      "status": "downloaded"
+    },
+    {
+      "path": "images/share-bg-m.jpg",
+      "size": 108512,
+      "status": "downloaded"
+    },
+    {
+      "path": "video/minisite-kv.mp4",
+      "size": 2780237,
+      "status": "downloaded"
+    },
+    {
+      "path": "video/amoled-screen.mp4",
+      "size": 2503070,
+      "status": "downloaded"
+    },
+    {
+      "path": "video/solar-screen.mp4",
+      "size": 2797209,
+      "status": "downloaded"
+    },
+    {
+      "path": "video/voice-listen.mp4",
+      "size": 1337549,
+      "status": "downloaded"
+    },
+    {
+      "path": "video/voice-control.mp4",
+      "size": 2158475,
+      "status": "downloaded"
+    },
+    {
+      "path": "video/voice-memo.mp4",
+      "size": 1693949,
+      "status": "downloaded"
+    }
+  ],
+  "failed": []
+}
