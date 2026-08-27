@@ -266,3 +266,384 @@ video {
     justify-content: center;
   }
 }
+
+/* ==========================================================================
+   Comprehensive Smartphone / Mobile Screen Optimization
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  html, body {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+    touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Global Header & Navigation on Mobile */
+  .garmin-header {
+    height: 52px;
+    padding: 0 12px;
+  }
+
+  .garmin-header .header-inner {
+    padding: 0 8px;
+  }
+
+  .garmin-logo svg {
+    height: 18px;
+  }
+
+  #pd-nav .pd-list-con {
+    padding: 10px 12px;
+  }
+
+  #pd-nav .pd-list-con .main-pd {
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  #pd-nav .sub-nav-con {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    white-space: nowrap;
+    padding: 8px 0;
+  }
+
+  #pd-nav .sub-nav-con::-webkit-scrollbar {
+    display: none;
+  }
+
+  #pd-nav .sub-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+    padding: 0 16px;
+    margin: 0;
+  }
+
+  #pd-nav .sub-nav li a {
+    font-size: 13px;
+    padding: 4px 6px;
+    white-space: nowrap;
+  }
+
+  #pd-nav .buy-now-all {
+    display: flex;
+    gap: 8px;
+    margin-top: 6px;
+  }
+
+  #pd-nav .buy-now-all a {
+    flex: 1;
+    text-align: center;
+    font-size: 11px;
+    padding: 6px 4px;
+  }
+
+  /* Hero Section Mobile */
+  #hero {
+    min-height: auto;
+    padding: 70px 0 30px 0;
+  }
+
+  #hero .container {
+    padding: 0 16px;
+  }
+
+  #hero .text {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  #hero .text p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  #hero .text h2 {
+    font-size: 32px;
+    line-height: 1.1;
+    margin-top: 12px;
+  }
+
+  #hero .video {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  /* Device Section Mobile */
+  #device {
+    padding: 30px 0;
+  }
+
+  #device .container {
+    padding: 0 16px;
+  }
+
+  #device .watch {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto 20px auto;
+  }
+
+  #device .text {
+    width: 100%;
+    text-align: center;
+  }
+
+  #device .text h2 {
+    font-size: 24px;
+  }
+
+  #device .text p {
+    font-size: 14px;
+  }
+
+  #device .compare ol {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 0;
+  }
+
+  #device .compare ol li span {
+    font-size: 28px;
+  }
+
+  /* Feature Overview Grid Mobile */
+  #overview {
+    padding: 40px 0;
+  }
+
+  #overview .title {
+    font-size: 20px;
+    line-height: 1.3;
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  #overview .all-items {
+    padding: 0 12px;
+  }
+
+  #overview .four-items {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  #overview .three {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  #overview .item {
+    width: 100% !important;
+    margin: 0 0 12px 0;
+    box-sizing: border-box;
+  }
+
+  /* Voice Feature Panels Mobile */
+  #voice {
+    padding: 40px 0;
+  }
+
+  #voice .text h2 {
+    font-size: 26px;
+  }
+
+  #voice .text h3 {
+    font-size: 14px;
+  }
+
+  #pin-container.pc {
+    display: flex;
+    flex-direction: column;
+    transform: none !important;
+    position: static !important;
+    width: 100% !important;
+    gap: 24px;
+    padding: 0 16px;
+  }
+
+  #pin-container .panel {
+    width: 100% !important;
+    min-width: 0 !important;
+    margin-bottom: 20px;
+  }
+
+  #pin-container .panel .video {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  /* Design & Materials Mobile */
+  #design {
+    padding: 40px 0;
+  }
+
+  #design .title h2 {
+    font-size: 26px;
+  }
+
+  #design .title p {
+    font-size: 14px;
+    padding: 0 16px;
+  }
+
+  #design .content-01, #design .content-02 {
+    padding: 0 16px;
+  }
+
+  /* Flashlight & Other Features Mobile */
+  #flashlight, #sports, #map, #share, #health, #smartlife, #bands {
+    padding: 40px 0;
+    overflow: hidden;
+  }
+
+  #flashlight .container, #sports .container, #map .container, #share .container, #health .container {
+    padding: 0 16px;
+  }
+
+  /* Spec Comparison Matrix Table Mobile */
+  section#spec {
+    padding: 40px 0 20px 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  section#spec .container {
+    padding: 0 8px;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+
+  section#spec table.products {
+    width: 100%;
+    min-width: 0;
+    table-layout: fixed;
+  }
+
+  section#spec table.table {
+    width: 100%;
+    min-width: 0;
+    table-layout: fixed;
+  }
+
+  section#spec table thead td.pd {
+    width: 50% !important;
+    padding: 8px 4px !important;
+    vertical-align: top;
+    box-sizing: border-box;
+  }
+
+  section#spec table thead td:first-child {
+    display: none;
+  }
+
+  section#spec .product-image-con {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section#spec .product-image-con img {
+    max-height: 130px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  section#spec .spec-fix .name {
+    font-size: 13px !important;
+    font-weight: 700;
+    margin: 6px 0 4px 0;
+  }
+
+  section#spec .size-con p {
+    font-size: 12px;
+  }
+
+  section#spec dl.color-con {
+    justify-content: center;
+    gap: 4px;
+    margin: 6px 0;
+  }
+
+  section#spec dl.color-con dd {
+    width: 16px;
+    height: 16px;
+  }
+
+  section#spec table tbody td.row-label {
+    width: 32% !important;
+    font-size: 12px !important;
+    padding: 8px 4px !important;
+    word-break: break-word;
+  }
+
+  section#spec table tbody td.text,
+  section#spec table tbody td.dot {
+    font-size: 12px !important;
+    padding: 8px 4px !important;
+    word-break: break-word;
+  }
+
+  /* Battery Accordions Mobile Optimization */
+  section#spec .battery-title {
+    width: 95% !important;
+    max-width: 150px !important;
+    margin: 6px auto 0 auto !important;
+    padding: 8px 10px !important;
+    font-size: 12px !important;
+    border-radius: 4px !important;
+  }
+
+  section#spec .battery-content {
+    width: 95% !important;
+    max-width: 150px !important;
+    margin: 0 auto 6px auto !important;
+    padding: 8px 10px !important;
+    font-size: 11px !important;
+  }
+
+  section#spec .battery-content ul {
+    padding-left: 12px !important;
+  }
+
+  section#spec .battery-content ul li {
+    font-size: 11px !important;
+    line-height: 1.4 !important;
+    margin-bottom: 4px !important;
+  }
+
+  /* Footer Mobile */
+  .garmin-footer {
+    padding: 24px 16px;
+    text-align: center;
+  }
+
+  .footer-brand {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .footer-links a {
+    font-size: 12px;
+  }
+}

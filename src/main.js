@@ -1,6 +1,6 @@
 /**
  * Garmin fēnix 8 - Main Application Controller
- * Orchestrates modules, video players, and responsive handlers
+ * Orchestrates modules, video players, and mobile touch responsive handlers
  */
 
 (function () {
@@ -21,13 +21,23 @@
     const pdNav = document.getElementById('pd-nav');
     if (pdNav) {
       window.addEventListener('scroll', function () {
-        if (window.scrollY > 100) {
+        if (window.scrollY > 80) {
           pdNav.classList.add('fixed');
         } else {
           pdNav.classList.remove('fixed');
         }
       }, { passive: true });
     }
+
+    // Handle touch device video plays
+    document.addEventListener('touchstart', function playOnFirstTouch() {
+      document.querySelectorAll('video[autoplay]').forEach(function (v) {
+        if (v.paused) {
+          v.muted = true;
+          v.play().catch(function () {});
+        }
+      });
+    }, { once: true, passive: true });
 
     console.log('[Garmin fēnix 8] Initialization complete.');
   }
