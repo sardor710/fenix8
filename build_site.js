@@ -9,7 +9,7 @@ const htmlTemplate = `<!DOCTYPE html>
     <title>fēnix 8 Series the ultimate smartwatch | Garmin Singapore</title>
     <meta name="description" content="fēnix 8 series - the ultimate smartwatch - the top choice for mountain climbing, trail running, skiing and other outdoor adventures. With either AMOLED or solar displays, torchlight, spectacular battery life, speaker and microphones and an enhanced performance and training features for more training data and insights. The best companion to be limitless!">
     <link rel="shortcut icon" href="vendor/favicon.ico">
-    <meta property="og:url" content="https://www.garmin.com.sg/minisite/fenix/fenix-8/">
+    <meta property="og:url" content="#">
     <meta property="og:type" content="website">
     <meta property="og:title" content="fēnix 8 Series the ultimate smartwatch | Garmin Singapore">
     <meta property="og:description" content="fēnix 8 series - the ultimate smartwatch - the top choice for mountain climbing, trail running, skiing and other outdoor adventures. With either AMOLED or solar displays, torchlight, spectacular battery life, speaker and microphones and an enhanced performance and training features for more training data and insights. The best companion to be limitless!">
@@ -40,10 +40,8 @@ const htmlTemplate = `<!DOCTYPE html>
     <!-- Top Global Header -->
     <header id="apac-header-2017" class="garmin-header">
         <div class="header-inner container">
-            <a href="https://www.garmin.com.sg/" class="garmin-logo" aria-label="Garmin Singapore">
-                <svg width="115" height="24" viewBox="0 0 115 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.4 0H0v24h10.4c6.6 0 11.2-4.5 11.2-12S17 0 10.4 0zm0 18.2H5.6V5.8h4.8c3.5 0 5.6 2.6 5.6 6.2s-2.1 6.2-5.6 6.2zm20.8-5.7h6.7v-4h-6.7V5.8h7.9V0H25.6v24h16.2v-5.8h-10.6v-5.7zm28.3 11.5l-6.8-12.7V24h-5.6V0h5.6l6.8 12.6V0h5.6v24h-5.6zm14.1 0h5.6V0h-5.6v24zm22 0l-7.7-14.7V24h-5.6V0h5.6l7.7 14.6V0h5.6v24h-5.6z"/>
-                </svg>
+            <a href="#" class="garmin-logo" aria-label="fenix 8">
+                <span class="logo-text">fenix 8</span>
             </a>
             <div class="header-nav-links">
                 <a href="#hero" class="nav-item">fēnix 8</a>
@@ -205,10 +203,10 @@ const htmlTemplate = `<!DOCTYPE html>
             <div class="footer-brand">
                 <p class="copyright">© 2026 Garmin Ltd. or its subsidiaries. All rights reserved.</p>
                 <div class="footer-links">
-                    <a href="https://www.garmin.com.sg/privacy/">Privacy Policy</a>
-                    <a href="https://www.garmin.com.sg/terms-of-use/">Terms of Use</a>
-                    <a href="https://www.garmin.com.sg/security/">Security</a>
-                    <a href="https://www.garmin.com.sg/compliance/">Compliance</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Security</a>
+                    <a href="#">Compliance</a>
                 </div>
             </div>
         </div>

@@ -1,23 +1,23 @@
 var lang = $('html').attr('data-locale').toLowerCase().substr(-2);
 var value = {
 'homepage': {
-'tw': 'https://www.garmin.com.sg/',
-'sg': 'https://www.garmin.com.sg/',
-'in': 'https://www.garmin.co.in',
-'ph': 'https://ph.garmin.com/',
-'hk': 'https://www.garmin.com.hk/',
-'my': 'https://www.garmin.com.my/',
-'th': 'https://discover.garmin.com/th-TH/',
-'kr': 'https://www.garmin.co.kr/',
-'vn': 'https://discover.garmin.com/vi-VN/',
-'id': 'https://www.garmin.co.id/',
-'cn': 'https://www.garmin.com.cn/',
-'jp': 'https://www.garmin.co.jp/'
+'tw': '#',
+'sg': '#',
+'in': '#',
+'ph': '#',
+'hk': '#',
+'my': '#',
+'th': '#',
+'kr': '#',
+'vn': '#',
+'id': '#',
+'cn': '#',
+'jp': '#'
 },
 }
 var productLink = {
-'amoled': 'https://www.garmin.com.sg/_js/api_products-gpn/010-02905-53',
-'solar': '`https://www.garmin.com.sg/_js/api_products-gpn/010-02907-70',
+'amoled': '#spec',
+'solar': '#spec',
 }
 var pdNav = new Vue({
 el: '#pd-nav',
@@ -28,8 +28,8 @@ text: `
         <h2 class="main-pd">FĒNIX 8 Series</h2>
         <ul class="pd-list" v-html="text"></ul>
         <div class="buy-now-all mobile-show">
-            <a target="_blank" class="btn-white-empty btn-size-small" href="${productLink['amoled']}" data-name="sub-nav" aria-label="sub-nav" data-ga-title="sub-nav fēnix 8 Amoled buy-now">BUY AMOLED</a>
-            <a target="_blank" class="btn-white-empty btn-size-small" href="${productLink['solar']}" data-name="sub-nav" aria-label="sub-nav" data-ga-title="sub-nav fēnix 8 Solar buy-now">BUY SOLAR</a>
+            <a class="btn-white-empty btn-size-small" href="${productLink['amoled']}" data-name="sub-nav" aria-label="sub-nav" data-ga-title="sub-nav fēnix 8 Amoled buy-now">BUY AMOLED</a>
+            <a class="btn-white-empty btn-size-small" href="${productLink['solar']}" data-name="sub-nav" aria-label="sub-nav" data-ga-title="sub-nav fēnix 8 Solar buy-now">BUY SOLAR</a>
         </div>
     </div>
 </div>
@@ -45,8 +45,8 @@ text: `
             <li><a href="#spec" data-ua-event="sub-nav Spec">Spec</a></li>
         </ul>
         <div class="buy-now-all pc-show">
-            <a target="_blank" class="btn-black-empty btn-size-small subnav-amoled" href="${productLink['amoled']}" data-name="sub-nav" aria-label="sub-nav" data-ga-title="sub-nav fēnix 8 Amoled buy-now">AMOLED</a>
-            <a target="_blank" class="btn-black-empty btn-size-small subnav-solar" href="${productLink['solar']}" data-name="sub-nav" aria-label="sub-nav" data-ga-title="sub-nav fēnix 8 Solar buy-now">SOLAR</a>
+            <a class="btn-black-empty btn-size-small subnav-amoled" href="${productLink['amoled']}" data-name="sub-nav" aria-label="sub-nav" data-ga-title="sub-nav fēnix 8 Amoled buy-now">AMOLED</a>
+            <a class="btn-black-empty btn-size-small subnav-solar" href="${productLink['solar']}" data-name="sub-nav" aria-label="sub-nav" data-ga-title="sub-nav fēnix 8 Solar buy-now">SOLAR</a>
         </div>
     </div>
 </div>
@@ -504,7 +504,7 @@ text: `
             <h2>Garmin Messenger app</h2>
             
             <p>Easily connect with your friends: Share your training results, activity routes and current location information.</p>
-            <!-- <a class="btn-white-fill btn-size-default" target="_blank" href="` + value['homepage'][lang] + `products/apps/messenger-app/" data-ga-title="message-app">Learn More</a> -->
+            <!-- <a class="btn-white-fill btn-size-default" href="#message-app" data-ga-title="message-app">Learn More</a> -->
         </div>
     </div>
     `
@@ -534,7 +534,7 @@ text: `
                             <div class="tag">&nbsp;</div>
                             <h2>Garmin ECG App</h2>
                             <p>In just 30 seconds, you can record your heart rate and check for signs of atrial fibrillation (AFib) or normal sinus rhythm.</p>
-                            <a class="btn-black-fill btn-size-default" target="_blank" href="` + value['homepage'][lang] + `minisite/garmin-technology/health-science/ecg/" data-ga-title="health-ecg">Learn More</a>
+                            <a class="btn-black-fill btn-size-default" href="#health" data-ga-title="health-ecg">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -546,7 +546,7 @@ text: `
                             <div class="tag">&nbsp;</div>
                             <h2>Sleep Tracking</h2>
                             <p>Sleep monitoring technology analyzes heart rate, HRV, blood oxygen, respiration and activity level data. Every night, you go through different sleep stages that alternate in cyclic waves: light sleep, deep sleep and REM (Rapid Eye Movement) sleep.</p>
-                            <a class="btn-black-fill btn-size-default" target="_blank" href="` + value['homepage'][lang] + `minisite/garmin-technology/health-science/sleep-tracking/" data-ga-title="health-sleep-tracking">Learn More</a>
+                            <a class="btn-black-fill btn-size-default" href="#health" data-ga-title="health-sleep-tracking">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -558,7 +558,7 @@ text: `
                             <div class="tag">＃KeyToTheSummit</div>
                             <h2>All-Day Blood Oxygen Sensing</h2>
                             <p>Monitoring your blood oxygen fluctuations day and night is a key to evaluating your readiness for high-altitude challenges. Check your fitness status in real time to be better prepared for your alpine adventures.</p>
-                            <a class="btn-black-fill btn-size-default" target="_blank" href="` + value['homepage'][lang] + `minisite/garmin-technology/health-science/pulse-ox/" data-ga-title="health-pulse-ox">Learn More</a>
+                            <a class="btn-black-fill btn-size-default" href="#health" data-ga-title="health-pulse-ox">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -570,7 +570,7 @@ text: `
                             <div class="tag"># UnlockYourPotential</div>
                             <h2>Analyzing your heart rate variability (HRV)</h2>
                             <p>HRV is a key index for professional athletes, who can rely on HRV to avoid over-training or injuries and be reminded to relax during heightened stress, allowing them to reach their fullest potential.</p>
-                            <a class="btn-black-fill btn-size-default" target="_blank" href="` + value['homepage'][lang] + `minisite/garmin-technology/health-science/stress-tracking/" data-ga-title="health-hrv">Learn More</a>
+                            <a class="btn-black-fill btn-size-default" href="#health" data-ga-title="health-hrv">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -583,7 +583,7 @@ text: `
                             <div class="tag">&nbsp;</div>
                             <h2>BODY BATTERY</h2>
                             <p>Body Battery energy monitoring makes the combined influences of physical activity, stress, rest and the restorative power of sleep visible in a powerful way. </p>
-                            <a class="btn-black-fill btn-size-default" target="_blank" href="` + value['homepage'][lang] + `minisite/garmin-technology/health-science/body-battery/" data-ga-title="health-body-battery">Learn More</a>
+                            <a class="btn-black-fill btn-size-default" href="#health" data-ga-title="health-body-battery">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -594,7 +594,7 @@ text: `
         <div class="swiper-button-prev"></div>
     </div>
     <div class="link">
-        <a class="" target="_blank" href="` + value['homepage'][lang] + `minisite/garmin-technology/health-science/" data-ga-title="more-health-tech">
+        <a class="" href="#health" data-ga-title="more-health-tech">
             <h2 class="fade-in">More Health Technology > </h2>
         </a>
     </div>

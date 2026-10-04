@@ -1,6 +1,6 @@
 # Garmin fēnix 8 Series Minisite Clone
 
-A pixel-perfect, interactive 1:1 clone of the official [Garmin fēnix 8 Series Minisite](https://www.garmin.com.sg/minisite/fenix/fenix-8/).
+A pixel-perfect, interactive 1:1 clone of the official Garmin fēnix 8 Series Minisite.
 
 ## 🌟 Features
 
@@ -16,14 +16,10 @@ A pixel-perfect, interactive 1:1 clone of the official [Garmin fēnix 8 Series M
 To preview locally:
 
 ```bash
-# Using Python
-python -m http.server 4044
-
-# Or using Node.js / npx
-npx serve -l 4044
+node server.js
 ```
 
-Open [http://localhost:4044](http://localhost:4044) in your browser.
+Open `http://localhost:3005` in your browser.
 
 ## 🧪 Testing
 

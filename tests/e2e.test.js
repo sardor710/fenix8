@@ -55,6 +55,8 @@ it("index.html exists and contains all required sections and meta tags", () => {
 
   assert(html.includes("fēnix 8 Series the ultimate smartwatch"), "Title missing in index.html");
   assert(html.includes("video/minisite-kv.mp4"), "Hero video source missing in index.html");
+  assert(html.includes('<span class="logo-text">fenix 8</span>'), "Logo text 'fenix 8' missing in index.html");
+  assert(!html.includes("DENIN"), "Obsolete 'DENIN' found in index.html");
 });
 
 // 2. Verify Media Assets & Manifest
@@ -119,6 +121,29 @@ it("spec section contains interactive AMOLED and Solar image selectors and size 
   assert(html.includes("spec-fenix-8-amoled-51mm-black.png"), "AMOLED 51mm black image missing");
   assert(html.includes("spec-fenix-8-solar-47mm-black.png"), "Solar 47mm image missing");
   assert(html.includes("spec-fenix-8-solar-51mm-black.png"), "Solar 51mm image missing");
+});
+
+// 6. Verify No External Website Links Exist
+it("no links to external websites exist across project entrypoints and scripts", () => {
+  const filesToCheck = [
+    "index.html",
+    "build_site.js",
+    "js/contents.js",
+    "js/promotion.js"
+  ];
+
+  filesToCheck.forEach(file => {
+    assert(fs.existsSync(file), `File missing: ${file}`);
+    const content = fs.readFileSync(file, "utf8");
+
+    // Check for any anchor tags linking to external websites
+    const externalAnchorRegex = /<a\b[^>]*\bhref=["']https?:\/\//i;
+    assert(!externalAnchorRegex.test(content), `Found external anchor link in ${file}`);
+
+    // Check for external Garmin website links
+    assert(!content.includes("https://www.garmin.com"), `Found external Garmin website link in ${file}`);
+    assert(!content.includes("https://fonts.garmin.com"), `Found external fonts.garmin.com link in ${file}`);
+  });
 });
 
 console.log(`\nResults: ${passed} / ${total} tests passed successfully!`);

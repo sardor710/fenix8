@@ -23,7 +23,7 @@ $(function () {
             .attr("data-ga-title", "color - " + i);
         r = "";
         (r += "<div>"),
-            (r += '<a href="' + window.location.origin.toLowerCase() + "/_js/api_products-gpn/" + t + '" target="_blank" data-ga-title="' + i + '" class="cta-button dark normal learn-more">' + e[o] + "</a>"),
+            (r += '<a href="#spec" data-ga-title="' + i + '" class="cta-button dark normal learn-more">' + e[o] + "</a>"),
             (r += "</div>"),
             $(this).parents().eq(2).find(".price-con").append(r),
             $(this).hasClass("active") && $(this).parents().eq(2).find(".price-con>div").eq(a).addClass("active");
@@ -38,7 +38,7 @@ $(function () {
     var _buy_country = location.substr(-2);
     var G_exclude = "";
     var G_products = [];
-    var G_api = "https://www.garmin.com.my/_js/api_minisite-buy-data/";
+    var G_api = "";
 
 
     $(".products .color-con>*").each(function() {
@@ -50,40 +50,7 @@ $(function () {
         }
     });
 
-
-    $.ajax({
-        type: "GET",
-        url: G_api + "?gpns="+ G_products.toString()+ "&country=" + _buy_country ,
-        dataType: "jsonp",
-        jsonp: "callback",
-         jsonpCallback: "minisite",
-        cache: !0,
-        success:function(data) {
-            var _isOK = data.status;
-            if (_isOK) {
-                $.each(data.products, function(i, item) {
-                    if (typeof item.gpn != "undefined" && item.gpn) {
-                        if (typeof item.price != "undefined" && item.price){
-                            if (typeof item.priceTax != "undefined" && item.priceTax) {
-                                if (typeof item.pricePromotionTax != "undefined" && item.pricePromotionTax) {
-                                    prices[item.gpn] = parseFloat(item.pricePromotion).toLocaleString();
-                                    pricesTax[item.gpn] = parseFloat(item.pricePromotionTax).toLocaleString();
-                                } else {
-                                    prices[item.gpn] = parseFloat(item.price).toLocaleString();
-                                    pricesTax[item.gpn] = parseFloat(item.priceTax).toLocaleString();
-                                }
-                            }
-                            if (typeof item.currencyFormat != "undefined") {
-                                currencyFormat = item.currencyFormat;
-                            }
-                        }
-                    } else {
-                        console.log("missing data");
-                    }
-                });
-            }
-        }
-    }).done(function () {
+    function applyPrices() {
         $("#spec thead td").each(function(){
             var thisSn = $(this).find(".color-con>*.active").attr("data-sn");
             var pPrice = currencyFormat + " " +  prices[thisSn];
@@ -120,7 +87,45 @@ $(function () {
                 $("#spec .products.active .promo-product .sale-price span").text("");
             }
         });
-    });
+    }
+
+    if (G_api) {
+        $.ajax({
+            type: "GET",
+            url: G_api + "?gpns="+ G_products.toString()+ "&country=" + _buy_country ,
+            dataType: "jsonp",
+            jsonp: "callback",
+            jsonpCallback: "minisite",
+            cache: !0,
+            success:function(data) {
+                var _isOK = data.status;
+                if (_isOK) {
+                    $.each(data.products, function(i, item) {
+                        if (typeof item.gpn != "undefined" && item.gpn) {
+                            if (typeof item.price != "undefined" && item.price){
+                                if (typeof item.priceTax != "undefined" && item.priceTax) {
+                                    if (typeof item.pricePromotionTax != "undefined" && item.pricePromotionTax) {
+                                        prices[item.gpn] = parseFloat(item.pricePromotion).toLocaleString();
+                                        pricesTax[item.gpn] = parseFloat(item.pricePromotionTax).toLocaleString();
+                                    } else {
+                                        prices[item.gpn] = parseFloat(item.price).toLocaleString();
+                                        pricesTax[item.gpn] = parseFloat(item.priceTax).toLocaleString();
+                                    }
+                                }
+                                if (typeof item.currencyFormat != "undefined") {
+                                    currencyFormat = item.currencyFormat;
+                                }
+                            }
+                        } else {
+                            console.log("missing data");
+                        }
+                    });
+                }
+            }
+        }).done(applyPrices);
+    } else {
+        applyPrices();
+    }
 
 
     $("dl.color-con dd").click(function () {

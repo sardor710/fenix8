@@ -64,13 +64,20 @@
 
     initSmoothScroll: function () {
       $('a[href^="#"]').on('click', function (e) {
-        const target = $(this.getAttribute('href'));
-        if (target.length) {
+        const href = this.getAttribute('href');
+        if (!href || href === '#' || href.length <= 1) {
           e.preventDefault();
-          $('html, body').stop().animate({
-            scrollTop: target.offset().top - 60
-          }, 400);
+          return;
         }
+        try {
+          const target = $(href);
+          if (target.length) {
+            e.preventDefault();
+            $('html, body').stop().animate({
+              scrollTop: target.offset().top - 60
+            }, 400);
+          }
+        } catch (err) {}
       });
     }
   };
